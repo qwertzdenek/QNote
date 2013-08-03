@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>639</width>
+    <height>358</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QNote</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>qnote.ico</normaloff>qnote.ico</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPlainTextEdit" name="plainTextEdit">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QListWidget" name="listWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>639</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Aplikace</string>
+    </property>
+    <addaction name="actionVypnout"/>
+   </widget>
+   <widget class="QMenu" name="menuN_pov_da">
+    <property name="title">
+     <string>Nápověda</string>
+    </property>
+    <addaction name="actionO"/>
+    <addaction name="actionO_Qt"/>
+   </widget>
+   <widget class="QMenu" name="menuPolo_ky">
+    <property name="title">
+     <string>Položky</string>
+    </property>
+    <addaction name="actionUlozit"/>
+    <addaction name="actionPridat"/>
+    <addaction name="actionSmazat"/>
+    <addaction name="actionPrejmenovat"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuPolo_ky"/>
+   <addaction name="menuN_pov_da"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionVypnout">
+   <property name="text">
+    <string>Vypnout</string>
+   </property>
+   <property name="whatsThis">
+    <string>Vypne aplikaci</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionUlozit">
+   <property name="text">
+    <string>Uložit</string>
+   </property>
+   <property name="whatsThis">
+    <string>Uloží soubor</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionO">
+   <property name="text">
+    <string>O aplikaci</string>
+   </property>
+  </action>
+  <action name="actionO_Qt">
+   <property name="text">
+    <string>O Qt</string>
+   </property>
+  </action>
+  <action name="actionPridat">
+   <property name="text">
+    <string>Přidat</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionSmazat">
+   <property name="text">
+    <string>Smazat</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionPrejmenovat">
+   <property name="text">
+    <string>Přejmenovat</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

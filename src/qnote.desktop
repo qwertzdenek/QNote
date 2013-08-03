@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=QNote
+Comment=Make notes
+Exec=qnote
+Icon=qnote.ico
+Terminal=false
+Categories=Office
